@@ -1,0 +1,104 @@
+/* This CSS file defines the styles for a webpage that displays a main content area with an image, time information, and an avatar section. The styles include layout properties, colors, and typography to create a visually appealing design. */
+body{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color:#0b182c;
+}
+
+/* The .main class styles the main content area of the webpage. It sets the width to 50% of the viewport, uses a grid layout, and applies a border with rounded corners. The content is centered both vertically and horizontally, and the background color is set to a dark blue shade. */
+.main{
+    width: 50%;
+    display: grid;
+    border: 1px solid black;
+    border-style: solid;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: #11253e;
+    padding: 20px;
+}
+
+/* The .equilibrium-image class styles the image displayed in the main content area. It applies rounded corners to the image, ensures that it covers the entire area without distortion, and centers the image within its container. */
+.equilibrium-image{
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: center; 
+}
+
+/* The .time class styles the time information displayed below the main content. It uses flexbox to align the items horizontally, adds a gap between them, and applies a grey color with reduced opacity to create a subtle appearance. The font weight is set to bold, and the items can wrap to the next line if necessary. */
+.time{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: grey;
+    opacity: 0.8;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+/* The .bottom class styles the bottom section of the webpage, which includes the avatar and time information. It uses flexbox to align the items horizontally and justifies the content with space between them, creating a balanced layout. */
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* The .avatar-image class styles the avatar image displayed in the avatar section. It sets the width and height to 50 pixels, and applies a border-radius of 50% to create a circular shape for the avatar. */
+.avatar-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* The .content class styles the main content text displayed in the webpage. It uses a light grey color and sets the font weight to bold, making the content stand out and easily readable against the dark background. */
+.content{
+    color: rgb(238, 237, 237);
+    font-weight: bold;
+}
+
+/*This is the style for the description text, which is displayed below the content. It uses a grey color with reduced opacity to create a subtle and less prominent appearance compared to the main content. This helps to differentiate the description from the main content while still providing additional information to the user.*/
+.description{
+    color: grey;
+    opacity: 0.8;
+}
+
+/*this is the style for the avatar section, which includes the avatar image and the creator's name. It uses flexbox to align the items horizontally and adds a gap between them for better spacing. The avatar image is styled to be circular with a specific width and height. The creator's name is displayed next to the avatar image.*/
+.avatar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-weight: bold;
+}
+
+/* The footer class styles the footer section of the webpage. It sets the width to 100% of the container and adds padding around the content to create space between the footer and other elements. */
+footer{
+    width: 100%;
+    padding: 20px;
+}
+
+/* The .price class styles the price information displayed in the bottom section of the webpage. It uses flexbox to align the items horizontally, applies a light blue color to the text, and sets the font weight to bold. A gap is added between the items for better spacing, and word spacing is set to normal to ensure proper text alignment. */
+.price{
+    display: flex;
+    color: rgb(68, 234, 253);
+    font-weight: bold;
+    gap: 10px;
+    word-spacing: normal;
+}
+
+/* The hr element styles the horizontal rule used to separate sections of the webpage. It removes the default border and applies a solid bottom border with a light grey color. Additionally, it adds a margin of 10 pixels around the horizontal rule to create space between it and other elements. */
+hr{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin: 10px;
+}
+
+/*the .avatar-image class styles the avatar image displayed in the avatar section. It applies a border-radius of 50% to create a circular shape for the avatar and adds a solid border with a light grey color. This enhances the visual appearance of the avatar and helps it stand out against the background.*/
+.avatar-image{
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
